@@ -1,0 +1,37 @@
+:root{
+  font-size: 16px;
+  text-align: center;
+}
+*{
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.cards-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.card-conteiner{
+  margin: auto;
+}
+.card-wrapper{
+  --img-size:100px;
+  min-width: calc(var(--img-size)*2);
+  width: 100%;
+  max-width: calc(var(--img-size)*3);
+  margin: 2rem;
+  border-radius: 2px solid rgb(133, 125, 125);
+  text-align: center;
+}
+.card-photo{
+  width:var(--img-size) ;
+  height: var(--img-size);
+  padding: 5px;
+  border: 3px solid rgba(199, 55, 103, 0.8);
+  border-radius:50%;
+  margin-top: calc(var(--img-size)*-0.5);
+  object-fit: cover;
+  object-position: top center;
+}
